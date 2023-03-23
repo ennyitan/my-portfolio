@@ -1,0 +1,96 @@
+h5{
+    font-family: 'Khula', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+footer{
+    background: #f5f5f5;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.download-div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.download-div>img{
+    width: 150px;
+}
+
+p{
+    font-weight: 500;
+}
+.footer-content{
+    padding: 5% 3% 2%;
+    background-color: rgb(35, 35, 35);
+}
+.support{
+    display: flex;
+    flex-direction: column;
+}
+.support a{
+    text-decoration: none;
+   
+}
+.footer-buttom{
+    height: 56px;
+    padding: 15px 0;
+   
+}
+.footer-buttom>p{
+    color: white;
+}
+.icon-link{
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grey{
+    color: rgb(213, 215, 220);
+}
+// .icon-link:hover{
+//     color: white;
+// }
+
+
+@media only screen and (max-width:650px){
+    .footer-content{
+        padding: 15% 5%;
+    }
+    .footer-logo{
+        margin-bottom: 30px;
+    }
+    .row{
+        gap: 20px;
+    }
+    .buttn{
+        padding: 12px, 15px, 12px, 15px; 
+    }
+}
+
+@media only screen and (max-width:450px){
+    .footer-buttom p{
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .row{
+        gap: 40px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .pl-lg {
+        padding-left: 3rem;
+    }
+}
+
+
+@media screen and (min-width: 480px) and (max-width: 1024px) {
+    .footer-row > div {
+        width: 45% !important;
+        flex: unset !important;
+    }
+    
+}

@@ -1,0 +1,38 @@
+.d-nav-link:hover{
+    color: rgb(2, 2, 43)!important;
+}
+.d-nav-active{
+    color: rgb(2, 2, 43)!important
+}
+.d-nav-active:hover{
+    color: white!important;
+}
+.d-bg{
+    background-color: #f96c00 !important
+}
+.col-wht{
+    color: white;
+}
+.f-18{
+    font-size: 38px;
+}
+.f-12{
+    font-size: 20px;
+}
+.d-input{
+    outline: 0;
+    border: 0;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: var(--navbar-padding, 0rem);
+    min-height: 4rem;
+    width: 100%;
+}
+
+@media screen and (max-width: 760px) {
+    .sm-hide {
+        display: none;
+    }
+}

@@ -1,0 +1,54 @@
+.slide-details{
+    width: 40%;
+    min-width: 280px;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+}
+.btn{
+    padding: 10px 40px;
+    border: none;
+    outline: none;
+}
+.orange{
+    background-color: rgb(249, 108, 0);
+}
+.slide-image{
+    width: 100%;
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fs-28{
+    font-size: 48px;
+}
+
+.fs-20{
+    font-size: 20px;
+    }
+    
+
+@media screen and (max-width: 760px) {
+    .fs-28 {
+        font-size: 28px;
+    }
+
+    .fs-20{
+        font-size: 18px;
+    }        
+}
+
+.carousel-1 {
+    background-image: linear-gradient(rgba(13, 17, 40, 0.2), rgba(253, 97, 0, 0.5)), url(../../../assets/images/crypto.jfif);
+}
+
+
+.ab{
+    position: absolute;
+}
+.rel{
+    position: relative;
+}
+.border-radius{
+    border-radius: 20px;
+}

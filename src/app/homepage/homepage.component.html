@@ -1,0 +1,241 @@
+<app-slides></app-slides>
+<div class="cards">
+  <app-cards
+    class="text-white"
+    *ngFor="let cardInfo of cardArray"
+    [headerText]="cardInfo.headerText"
+    [details]="cardInfo.details"
+    [class]="cardInfo.bgColor"
+  ></app-cards>
+</div>
+
+<section class="offers container" id="about">
+  <div class="p-4">
+    <h3 class="mb-4">What We Offer</h3>
+    <p>
+      On her way she met a copy. The copy warned the Little Blind Text, that
+      where it came from it would have been rewritten a thousand times and
+      everything that was left from its origin would be the word.
+    </p>
+
+    <!-- <div class="offerDetails">
+      <div class="offer">
+        <img src="" alt="">
+        <h3>Safety First</h3>
+        <p>
+          Far far away, behind the word mountains, far from the countries
+          Vokalia.
+        </p>
+      </div>
+      <div class="offer">
+        <img src="" alt="" />
+        <h3>Regular Classes</h3>
+        <p>
+          Far far away, behind the word mountains, far from the countries
+          Vokalia.
+        </p>
+      </div>
+      <div class="offer">
+        <img src="" alt="" />
+        <h3>Certified Teachers</h3>
+        <p>
+          Far far away, behind the word mountains, far from the countries
+          Vokalia.
+        </p>
+      </div>
+      <div class="offer">
+        <img src="" alt="" />
+        <h3>Sufficient Classrooms</h3>
+        <p>
+          Far far away, behind the word mountains, far from the countries
+          Vokalia.
+        </p>
+      </div>
+      <div class="offer">
+        <img src="" alt="" />
+        <h3>Creative Lessons</h3>
+        <p>
+          Far far away, behind the word mountains, far from the countries
+          Vokalia.
+        </p>
+      </div>
+      <div class="offer">
+        <img src="" alt="" />
+        <h3>Sports Facilities</h3>
+        <p>
+          Far far away, behind the word mountains, far from the countries
+          Vokalia.
+        </p>
+      </div>
+    </div> -->
+  </div>
+  <!-- <img
+    class="offerImage"
+    src="../../../../assets/images/offersImage.webp"
+    alt=""
+  /> -->
+</section>
+<!-- parallax section -->
+<div class="parallax">
+  <div class="fox-uni">
+    <div class="fox-details text-center">
+      <h2 class="text-white fs-40"text>About</h2>
+      <p class="text-white fs-18">
+        Separated they live in. A small river named Duden flows by their place
+        and supplies it with the necessary regelialia. It is a paradisematic
+        country. A small river named Duden flows by their place and supplies it
+        with the necessary regelialia. It is a paradisematic country, in which
+        roasted parts of sentences fly into your mouth.<br />
+        A small river named Duden flows by their place and supplies it with the
+        necessary regelialia. It is a paradisematic country, in which roasted
+        parts of sentences fly into your mouth.
+      </p>
+    </div>
+  </div>
+  <!-- <div class="parallax-data text-center pt-5 text-white font-bold">
+    <div *ngFor="let userData of parallax">
+      <h3 class="fs-40">{{ userData?.dNumber }}</h3>
+      <p class="fs-18">{{ userData?.title }}</p>
+    </div>
+  </div> -->
+</div>
+
+<div class="courses" id="courses">
+  <div class="text-center">
+    <h2 class="fs-40 mb-4 headings">Experience</h2>
+    <p class="fs-18 text-center mx-auto separated-they-live mb-4">
+      Separated they live in. A small river named Duden flows by their place and
+      supplies it with the necessary regelialia. It is a paradisematic country
+    </p>
+  </div>
+
+  <div class="container-fluid">
+    <div class="cards">
+      <app-cards
+        class="text-white"
+        *ngFor="let cardInfo of cardArray"
+        [headerText]="cardInfo.headerText"
+        [details]="cardInfo.details"
+        [class]="cardInfo.bgColor"
+      ></app-cards>
+    </div>
+  </div>
+</div>
+
+<div class="teachers grey p-5 " id="staff">
+    <div class="text-center">
+        <h2 class="fs-40 text-center mb-4 headings">Projects</h2>
+        <p class="fs-18 mx-auto separated-they-live">
+          Separated they live in. A small river named Duden flows by their place and
+          supplies it with the necessary regelialia. It is a paradisematic country
+        </p>
+      </div>
+      <div class="">
+        <div class="b-border">
+          <div class="">
+            <h1>Choppings application</h1>
+          </div>
+          <p>view project here</p>
+        </div>
+      </div>
+</div>
+
+<div class="quote-request text-white for-align p-5">
+  <div>
+    <p class="fs-40">Contact Informations</p>
+  </div>
+ <div class="for-contact d-border">
+ <div>
+  <p>Email</p>
+  <p>@you@simi.com</p>
+ </div>
+ <div>
+  <p>Twitter</p>
+  <p>@you@simi.com</p>
+ </div>
+ <div>
+  <p>Instagram</p>
+  <p>@you@simi.com</p>
+ </div>
+ <div>
+  <p>Email</p>
+  <p>@you@simi.com</p>
+ </div>
+ </div>
+    <!-- <div class=" forQuote w-50">
+        <h1 class="fs-40 mb-3 text-white headings">Request A Quote</h1>
+    <p class="mb-5 fs-18 text-white ">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+    <div class="row">
+        <form [formGroup]="commentForm" class="pb-2" (ngSubmit)="commentSubmit(commentForm.value)">
+            <div class="row">
+            <div class="form-group col-sm-6 mb-5">
+              
+                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="first name" formControlName="firstName">
+                <small class="text-white" *ngIf="commentForm.get('firstName')?.invalid && commentForm.get('firstName')?.touched">first name is required!</small>
+              </div>
+    
+              <div class="form-group col-sm-6 mb-5">
+               
+                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="last name" formControlName="lastName">
+                <small class="text-white" *ngIf="commentForm.get('lastName')?.invalid && commentForm.get('lastName')?.touched">last name is required!</small>
+              </div>
+              </div>
+              <div class="row">
+            <div class="form-group col-sm-6 mb-5">
+             
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" formControlName="email">
+              <small class="text-white" *ngIf="commentForm.get('email')?.invalid && commentForm.get('email')?.touched">please check your email</small>
+            </div>
+            <div class="form-group col-sm-6 mb-5">
+               
+                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Phone" formControlName="phone">
+                <small class="text-white" *ngIf="registered && commentForm.get('phone')?.errors?.['required'] && commentForm.get('phone')?.touched">phone is required</small>
+                
+                <small class="text-white" *ngIf=" commentForm.get('phone')?.errors?.['maxlength']">phone number must be valid</small>
+              </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-sm-6 mb-5">
+                
+                    <textarea type="text" class="form-control" id="exampleInputPassword1" placeholder="message" formControlName="body"></textarea>
+                    <small class="text-white" *ngIf="commentForm.get('body')?.invalid && commentForm.get('body')?.touched">please type in a message</small>
+                  </div>
+                 
+              </div>
+              <app-button
+              [class]="'btn orange text-white rounded col-sm-6'"
+              text="Request A Quote"
+              
+            ></app-button>
+           
+          </form>
+    </div>
+    </div> -->
+    
+</div>
+<!-- <app-reviws></app-reviws> -->
+
+<!-- <div class="blog grey p-5">
+  <h2 class="fs-40 text-center mb-4 headings">School Blog</h2>
+  <p class="fs-18 mx-auto separated-they-live text-center">Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
+<div class="shift mt-5">
+    <app-blog
+      class=""
+      image="../../../../assets/images/blog1.webp"
+      headerText="Skills To Develop Your Child Memory"
+      details="Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+    ></app-blog>
+    <app-blog
+      class=""
+      image="../../../../assets/images/blog3.webp"
+      headerText="Skills To Develop Your Child Memory"
+      details="Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+    ></app-blog>
+    <app-blog
+      class=""
+      image="../../../../assets/images/blog1.webp"
+      headerText="Skills To Develop Your Child Memory"
+      details="Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+    ></app-blog>
+  </div>
+  </div> -->

@@ -1,0 +1,186 @@
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.blackBg {
+    background-color: rgb(2, 2, 43)!important;
+}
+.orangeBg {
+    background-color: orangered;
+}
+.offers{
+    /* display: grid;
+    grid-template-columns: 60% 40%; */
+    text-align: center;
+    padding: 40px;
+}
+.offerImage,.video{
+    object-fit: contain;
+    width: 100%;
+}
+.offerDetails{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.parallax{
+    // background-image: linear-gradient(rgba(230, 70, 21, 0.5), rgba(202, 93, 25, 0.9)), url(../../../../assets/images/simi.jpg);
+    /* min-height: 100vh;  */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem;
+}
+
+.for-align{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fox-uni{
+    text-align: center;
+}
+.for-contact{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+.parallax-data{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.fs-40{
+    font-size: 40px;
+}
+.fs-18{
+    font-size: 18px;
+}
+.forImg{
+    object-fit: contain;
+    width: 100%;
+    margin-bottom: 16px;
+}
+.shift{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.b-border{
+    border: 1px solid rgb(249, 108, 0);
+    border-radius: 8px;
+}
+.d-contact{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+@media screen and (max-width: 760px) {
+    .shift {
+        display: block;
+    }
+}
+
+.d-grid{
+    display: grid;
+    grid-template-columns: repeat(4 1fr);
+}
+.orange{
+    background-color: rgb(249, 108, 0);
+}
+.orange-txt{
+    color: rgb(249, 108, 0) ;
+}
+.grey{
+    background-color: rgb(247, 247, 247);
+}
+.quote-request{
+    // background-image: linear-gradient(rgba(230, 70, 21, 0.5), rgba(202, 93, 25, 0.9)), url(../../../../assets/images/block.webp);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 7em;
+}
+input {
+    outline: 0;
+    border: 0;
+    border-width: 0 0 2px;
+    border-color: rgb(247, 247, 247)
+  }
+.cal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgb(249, 108, 0);
+    object-fit: contain;
+    width: 65%;
+    height: 65%;
+}
+.border-radius{
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 650px){
+    .forQuote{
+      width: 100% !important;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .offerImage{
+        display: none;
+    }
+    .offerDetails{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .offers{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .fox-uni{
+        text-align: center;
+    }
+    .video{
+        display: none;
+    }
+    .parallax-data{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .headings{
+        font-size: 30px;
+    }
+  }
+ 
+  .courses {
+    padding: 1rem ;
+  }
+
+  .separated-they-live {
+    width: 80%;
+    min-width: 200px;
+    max-width: 600px;
+  }
+
+  @media screen and (min-width: 760px) {
+    .courses {
+        padding: 2rem;
+    }
+
+    .parallax {
+        padding: 7rem;
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    .row > .col-sm {
+        margin-bottom: 20px;
+    }
+  }
+
+  .pb-2 {
+    padding-bottom: 1rem;
+  }

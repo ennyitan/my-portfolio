@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+}
+.hide-menu {
+    left:-800px
+}
+.active {
+    border-bottom: 2px solid #0dde65;
+    border-radius: 0 !important;
+}
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.blackBg {
+    background-color: rgb(2, 2, 43)!important;
+}
+.orangeBg {
+    background-color: orangered;
+}
+.offers{
+    /* display: grid;
+    grid-template-columns: 60% 40%; */
+    text-align: center;
+    padding: 40px;
+}
+.offerImage,.video{
+    object-fit: contain;
+    width: 100%;
+}
+.offerDetails{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.parallax{
+    background-image: linear-gradient(rgba(230, 70, 21, 0.5), rgba(202, 93, 25, 0.9)), url(../assets/images/new/simi.jpg);
+    /* min-height: 100vh;  */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem;
+}
+
+.for-align{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fox-uni{
+    text-align: center;
+}
+.for-contact{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+.parallax-data{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.fs-40{
+    font-size: 40px;
+}
+.fs-18{
+    font-size: 18px;
+}
+.forImg{
+    object-fit: contain;
+    width: 100%;
+    margin-bottom: 16px;
+}
+.shift{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.b-border{
+    border: 1px solid rgb(249, 108, 0);
+    border-radius: 8px;
+    padding: 2rem;
+   margin: 0 auto;
+}
+
+.d-contact{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+@media screen and (max-width: 760px) {
+    .shift {
+        display: block;
+    }
+    .b-border{
+        border: 1px solid rgb(249, 108, 0);
+        border-radius: 8px;
+        padding: 2rem;
+       margin: 0 auto;
+    }
+}
+
+.d-grid{
+    display: grid;
+    grid-template-columns: repeat(4 1fr);
+}
+.orange{
+    background-color: rgb(249, 108, 0);
+}
+.orange-txt{
+    color: rgb(249, 108, 0) ;
+}
+.grey{
+    background-color: rgb(247, 247, 247);
+}
+.quote-request{
+    background-image: linear-gradient(rgba(230, 70, 21, 0.5), rgba(202, 93, 25, 0.9)), url(../assets/images/new/block.webp);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 7em;
+}
+input {
+    outline: 0;
+    border: 0;
+    border-width: 0 0 2px;
+    border-color: rgb(247, 247, 247)
+  }
+  .icon-link{
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgb(249, 108, 0);
+    object-fit: contain;
+    width: 65%;
+    height: 65%;
+}
+.border-radius{
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 650px){
+    .forQuote{
+      width: 100% !important;
+    }
+    .b-border{
+        border: 1px solid rgb(249, 108, 0);
+        border-radius: 8px;
+        padding: 2rem;
+       margin: 0 auto;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .offerImage{
+        display: none;
+    }
+    .offerDetails{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+   .quote-request{
+    display: grid;
+    grid-template-columns: 100%;
+   }
+   .for-contact{display: grid;
+    grid-template-columns: 100%;}
+    .offers{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .fox-uni{
+        text-align: center;
+    }
+    .video{
+        display: none;
+    }
+    .parallax-data{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .headings{
+        font-size: 30px;
+    }
+  }
+ 
+
+  .separated-they-live {
+    width: 80%;
+    min-width: 200px;
+    max-width: 600px;
+  }
+
+  @media screen and (min-width: 760px) {
+    .b-border{
+        border: 1px solid rgb(249, 108, 0);
+        border-radius: 8px;
+        padding: 2rem;
+       margin: 0 auto;
+    }
+
+    .parallax {
+        padding: 7rem;
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    .row > .col-sm {
+        margin-bottom: 20px;
+    }
+  }
+
+  .pb-2 {
+    padding-bottom: 1rem;
+  }
